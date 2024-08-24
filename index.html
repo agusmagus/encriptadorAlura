@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/log.png">
+        <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+        <div class="button-group">
+            <button onclick="encriptaCadena()">Encriptar</button>
+            <button onclick="desencriptaCadena()">Desencriptar</button>
+        </div>
+        <textarea id="outputText" placeholder="Solo letras minúsculas sin acentos" readonly></textarea>
+        <div class="copy-button">
+            <button id="copyButton" onclick="copiarCadena()" style="display: none;">Copiar</button>
+        </div>
+        <footer class="footer">
+            <h5>Desarrollado por José Rodríguez</h5>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
